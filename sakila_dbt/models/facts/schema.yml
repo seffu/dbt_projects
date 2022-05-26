@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+
+      - name: fact_rental
+        columns:
+            - name: rental_id
+              description: "The primary key for this table"
+              tests:
+                  - unique
+                  - not_null
+
+
+      - name: fact_payment
+        columns:
+            - name: payment_id
+              description: "The primary key for this table"
+              tests:
+                  - unique
+                  - not_null
+
+sources:
+  - name: stg
+    database: sakila_wh
+    schema: stg
+    tables:
+     - name: rental
+     - name: inventory
+     - name: payment
