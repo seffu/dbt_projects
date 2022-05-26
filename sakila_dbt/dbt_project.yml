@@ -33,6 +33,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   sakila_dbt:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+
+    dimensions:
+      +materialized: table
+      +schema: dwh
+
+    facts:
+      +materialized: table
+      +schema: dwh
