@@ -1,13 +1,12 @@
 # DBT PROJECTS
 ## Create a Virtual Environment
-```
-python -m venv venv
-```
+`python -m venv venv`
+
 ```
 source venv/activate.bin
 ```
 ## Install DBT
-For installation of DBT you can instal the necessary dependencies or plain dbt using 
+For installation of DBT you can install the necessary dependencies or plain dbt using 
 ```
 pip install dbt-core
 ```
