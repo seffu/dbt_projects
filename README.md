@@ -1,7 +1,8 @@
 # DBT PROJECTS
 ## Create a Virtual Environment
-`python -m venv venv`
-
+```
+python -m venv venv
+```
 ```
 source venv/activate.bin
 ```
